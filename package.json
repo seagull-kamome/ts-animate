@@ -1,0 +1,19 @@
+{
+  "name": "ts-animate",
+  "version": "1.0.0",
+  "description": "toy level animation library",
+  "devDependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "watch": "tsc --build tsconfig.json --watch & ./node_modules/.bin/webpack --config webpack.config.js -w",
+    "build": "tsc --build tsconfig.json && ./node_modules/.bin/webpack --config webpack.config.js",
+    "production": "tsc --build tsconfig-prod.json && ./node_modules/.bin/webpack --config webpack-prod.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "gnome-www-browser example/index.html"
+  },
+  "author": "HATTORI, Hiroki",
+  "license": "MIT",
+  "dependencies": {}
+}
